@@ -13,6 +13,7 @@ cd ..
 rm -rf ./yay-bin
 #Install needed AUR packages
 yay -S yandex-browser kotatogram-desktop-bin
+#Set needed git variables
 git config --global user.email "4130+zewebdevf4gs@users.noreply.github.com"
 git config --global user.name "zewebdevf4gs"
 #Get base configuration files for the system type from github
