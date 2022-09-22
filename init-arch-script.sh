@@ -6,6 +6,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 cd ..
+rm -rf ./yay-bin
 yay -S yandex-browser kotatogram-desktop-bin
 git config --global user.email "4130+zewebdevf4gs@users.noreply.github.com"
 git config --global user.name "zewebdevf4gs"
