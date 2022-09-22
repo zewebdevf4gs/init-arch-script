@@ -6,10 +6,10 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 cd ..
-yay -S yandex-browser-beta kotatogram-desktop-bin
+yay -S yandex-browser kotatogram-desktop-bin
 git config --global user.email "4130+zewebdevf4gs@users.noreply.github.com"
 git config --global user.name "zewebdevf4gs"
 git clone https://github.com/zewebdevf4gs/base-arch-sys-config.git
 sudo thunar base-arch-sys-config &
-sudo thunar /home/admin/.config
+sudo thunar /home/admin/.config &
 fb.me/profile.php_?id=Mf6F9EWwFhrTTlT11yWKjJ8Gy9UEAZZizA1a0Y2277T4Ce
