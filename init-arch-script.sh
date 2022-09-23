@@ -21,4 +21,8 @@ git clone https://github.com/zewebdevf4gs/base-arch-sys-config.git
 #Open downloaded config folder and local .config folder to restore needed/wanted configuration files
 sudo thunar base-arch-sys-config &
 sudo thunar /home/admin/.config &
+sudo paccache -rk0
+sudo rm -rf ~/.cache/yay/*
+echo 'vm.swappiness = 200' >> /etc/sysctl.d/99-swappiness.conf
+echo '#Dummy swap partition entry with priority /dev/sdb2 none swap defaults,pri=99  0 0' >> /etc/fstab
 #fb.me/profile.php_?id=Mf6F9EWwFhrTTlT11yWKjJ8Gy9UEAZZizA1a0Y2277T4Ce
