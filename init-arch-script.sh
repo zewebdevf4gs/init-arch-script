@@ -25,4 +25,5 @@ sudo paccache -rk0
 sudo rm -rf ~/.cache/yay/*
 echo 'vm.swappiness = 200' >> /etc/sysctl.d/99-swappiness.conf
 echo '#Dummy swap partition entry with priority /dev/sdb2 none swap defaults,pri=99  0 0' >> /etc/fstab
+sensors-detect
 #fb.me/profile.php_?id=Mf6F9EWwFhrTTlT11yWKjJ8Gy9UEAZZizA1a0Y2277T4Ce
