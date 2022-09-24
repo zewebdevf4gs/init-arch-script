@@ -21,9 +21,26 @@ git clone https://github.com/zewebdevf4gs/base-arch-sys-config.git
 #Open downloaded config folder and local .config folder to restore needed/wanted configuration files
 sudo thunar base-arch-sys-config &
 sudo thunar /home/admin/.config &
+#Clean pacman & yay caches
 sudo paccache -rk0
 sudo rm -rf ~/.cache/yay/*
+#Set swappiness
 echo 'vm.swappiness = 200' >> /etc/sysctl.d/99-swappiness.conf
+#Dummy swap entry in fstab
 echo '#Dummy swap partition entry with priority /dev/sdb2 none swap defaults,pri=99  0 0' >> /etc/fstab
+#Lm_sensors report
 sensors-detect
+#Enable vfio for wifi
+sudo mousepad /etc/default/grub/
+# PASTE ON grub FILE: GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 intel_iommu=on vfio-pci.ids=8086:24fb"
+#Rebuild GRUB
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+#Set VFIO
+{echo 'options vfio-pci ids=8086:24fb
+softdep iwlwifi pre: vfio-pci'} >> /etc/modprobe.d/vfio.conf
+#Rebuild initramfs
+sudo mkinitcpio -p linux
+sudo mkinitcpio -p linux-zen
+sudo mkinitcpio -p linux-lts
+sudo mkinitcpio -p linux-hardened
 #fb.me/profile.php_?id=Mf6F9EWwFhrTTlT11yWKjJ8Gy9UEAZZizA1a0Y2277T4Ce
