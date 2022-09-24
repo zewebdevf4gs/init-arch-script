@@ -1,5 +1,5 @@
 #Install needed packages
-sudo pacman -S pacman-contrib piper xfce4-whiskermenu-plugin xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft syncthing
+sudo pacman -S pacman-contrib piper xfce4-whiskermenu-plugin virt-viewer xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft syncthing
 #Enable Super key, Syncthing & libvirt daemon
 xcape -e 'Super_L=Alt_L|F1'
 systemctl enable --now syncthing.service --user
