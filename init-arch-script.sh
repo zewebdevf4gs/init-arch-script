@@ -1,7 +1,10 @@
 #Install desired packages
-sudo pacman -S pacman-contrib piper gftp xfce4-whiskermenu-plugin virt-viewer xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft syncthing
+sudo pacman -S pacman-contrib piper gftp xfce4-whiskermenu-plugin virt-viewer python-pip xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft syncthing
 #Install all of VLCs optional dependencies to fix fucked video playback -no kwallet
 sudo pacman -S pcsclite aribb25 aribb24 projectm libgoom2 lirc sdl_image libtiger libkate zvbi lua52-socket libmicrodns protobuf ttf-dejavu smbclient libmtp vcdimager libgme libva-intel-driver libva-vdpau-driver libdc1394
+#Install demucs
+pip3 install --user -U demucs
+#python3 -m demucs -d cpu PATH_TO_AUDIO_FILE_1
 #Enable Super key, Syncthing & libvirt daemon
 xcape -e 'Super_L=Alt_L|F1'
 systemctl enable --now syncthing.service --user
