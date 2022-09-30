@@ -1,7 +1,9 @@
 # Update
 sudo pacman -Syyu
-# Install desired packages
-sudo pacman-contrib piper gftp xfce4-whiskermenu-plugin ffmpeg cdrkit xdg-user-dirs virt-viewer python-pip xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft syncthing
+# Install desired packages, separated for readability
+sudo pacman -S pacman-contrib piper gftp xfce4-whiskermenu-plugin ffmpeg cdrkit xdg-user-dirs neo-matrix ttf-vlgothic obs-studio virt-viewer python-pip 
+sudo pacamn -S xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor 
+sudo pacman -S virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft syncthing
 # Install all of VLCs optional dependencies to fix fucked video playback -no kwallet
 sudo pacman -S pcsclite aribb25 aribb24 projectm libgoom2 lirc sdl_image libtiger libkate zvbi lua52-socket libmicrodns protobuf ttf-dejavu smbclient libmtp vcdimager libgme libva-intel-driver libva-vdpau-driver libdc1394
 # Create user folders
