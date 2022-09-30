@@ -1,7 +1,7 @@
 # Update
 sudo pacman -Syyu
 # Install desired packages, separated for readability
-sudo pacman -S pacman-contrib piper gftp xfce4-whiskermenu-plugin ffmpeg cdrkit xdg-user-dirs neo-matrix ttf-vlgothic obs-studio virt-viewer python-pip 
+sudo pacman -S pacman-contrib piper wmctrl gftp xfce4-whiskermenu-plugin ffmpeg cdrkit xdg-user-dirs neo-matrix ttf-vlgothic obs-studio virt-viewer python-pip 
 sudo pacman -S xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor 
 sudo pacman -S virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft syncthing
 # Install all of VLCs optional dependencies to fix fucked video playback -no kwallet
