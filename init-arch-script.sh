@@ -1,7 +1,7 @@
 # Update
 sudo pacman -Syyu
 # Install desired packages, separated for readability
-sudo pacman -S pacman-contrib piper wmctrl gftp xfce4-whiskermenu-plugin ffmpeg cdrkit xdg-user-dirs neo-matrix ttf-vlgothic zip python-pip 
+sudo pacman -S pacman-contrib piper wmctrl gftp xfce4-whiskermenu-plugin ffmpeg cdrkit xdg-user-dirs ttf-vlgothic zip python-pip 
 sudo pacman -S xcape ntfs-3g firefox vlc gparted gnome-disk-utility baobab galculator p7zip psensor syncthing obs-studio 
 sudo pacman -S virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft virt-viewer 
 # Install all of VLCs optional dependencies to fix fucked video playback -no kwallet
@@ -24,7 +24,7 @@ cd ..
 # Remove yay's source folder
 rm -rf ./yay-bin
 # Install needed AUR packages
-yay -S yandex-browser kotatogram-desktop-bin yacy
+yay -S yandex-browser kotatogram-desktop-bin yacy neo-matrix
 # Enable yacy service
 systemctl enable --now yacy.service
 # Set needed git variables
