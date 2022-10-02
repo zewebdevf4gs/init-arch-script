@@ -24,7 +24,8 @@ cd ..
 # Remove yay's source folder
 rm -rf ./yay-bin
 # Install needed AUR packages
-yay -S yandex-browser kotatogram-desktop-bin yacy neo-matrix
+yay -S yandex-browser kotatogram-desktop-bin neo-matrix tartube
+# yay -S yacy
 # Enable yacy service
 systemctl enable --now yacy.service
 # Set needed git variables
