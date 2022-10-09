@@ -1,0 +1,15 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda2
+UUID=61764141-93da-4499-ac56-d9d4afe1b13f	/         	ext4      	rw,relatime	0 1
+
+# /dev/sda1
+UUID=28C8-7447      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sdb1
+UUID=b7f3aef0-6f86-463e-bd2e-807b71e4967a	/home     	ext4      	rw,relatime	0 2
+
+/dev/disk/by-uuid/fb24a8a5-4f12-430e-91a5-b0b24f9ae30b /mnt/storage-ssd auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=Storage%20SSD 0 0
+/dev/disk/by-uuid/270162d5-2766-4c7b-93ac-45bde5941e90 /mnt/storage-disk auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=Storage%20HDD 0 0
