@@ -60,3 +60,8 @@ sudo mkinitcpio -p linux-lts
 sudo mkinitcpio -p linux-hardened
 # fb.me/profile.php_?id=Mf6F9EWwFhrTTlT11yWKjJ8Gy9UEAZZizA1a0Y2277T4Ce
 #TODO UPDATE CONFIG FILE & ADD HDSentinel entries
+sudo echo 'Description="Ethernet Bridge connection"
+Interface=br0
+Connection=bridge
+BindsToInterfaces=(eno1)
+IP=dhcp' >> /etc/netctl/bridge
